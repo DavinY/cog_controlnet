@@ -1,15 +1,26 @@
 import os
 from subprocess import call
 
+# model_dl_urls = {
+#     "canny": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_canny.pth",
+#     "depth": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_depth.pth",
+#     "hed": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_hed.pth",
+#     "normal": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_normal.pth",
+#     "mlsd": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_mlsd.pth",
+#     "openpose": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_openpose.pth",
+#     "scribble": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_scribble.pth",
+#     "seg": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_seg.pth",
+# }
+
 model_dl_urls = {
-    "canny": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_canny.pth",
+    "canny": "https://huggingface.co/ListAngel/control_any3/blob/main/control_any3_canny.pth",
     "depth": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_depth.pth",
     "hed": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_hed.pth",
     "normal": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_normal.pth",
-    "mlsd": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_mlsd.pth",
-    "openpose": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_openpose.pth",
-    "scribble": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_scribble.pth",
-    "seg": "https://huggingface.co/lllyasviel/ControlNet/resolve/main/models/control_sd15_seg.pth",
+    "mlsd": "https://huggingface.co/ListAngel/control_any3/blob/main/control_any3_hough.pth",
+    "openpose": "https://huggingface.co/ListAngel/control_any3/blob/main/control_any3_openpose.pth",
+    "scribble": "https://huggingface.co/ListAngel/control_any3/blob/main/control_any3_scribble.pth",
+    "seg": "https://huggingface.co/ListAngel/control_any3/blob/main/control_any3_seg.pth",
 }
 
 annotator_dl_urls = {
